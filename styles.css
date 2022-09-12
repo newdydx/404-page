@@ -1,70 +1,81 @@
 * {
     box-sizing: border-box;
-}
-body {
-    background-color: aliceblue;
-}
-.container {
-    position:relative;
-    display:block;
     overflow: hidden;
 }
-.pname {
-    text-align:center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 10px;
+.container {
+    display: flex;
+    background-color: #fff;
+    flex-direction: row;
+    height: 100vh;
+    position: relative;
+    flex-wrap: nowrap;
+    overflow:hidden;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
 }
-.not {
-    font-size: 24px;
-    font-weight: 700px;
-    line-height: 25.18px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:#333333;
-    margin-left: 2%;
-    height: 25px;
-    margin-top:-1%;
+img {
+    max-width: 80%;
 }
-.img {
-    /* position:absolute; */
-    display: block;
-    width:45%;
-    height:45%;
-   margin-left:8%;
-}
-div.head {
-    margin-left: 67%;
-    margin-top: -35%;
-    display:block;
-    padding: 0 0 0 12px;
-}
-.prg {
-    font-size: 50px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 700;
-    line-height: 1.3em;
+.top {
+    position: absolute;
+    top: 2px;
+    left: 18px;
+    margin-top: 1rem;
 }
 .username {
-    margin-top:16%;
+    position: absolute;
     text-align: center;
+    top: 93%;
+    left: 45%;
+}
+.prg {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'space Mono';
+}
+.head {
+    /* text-align: justify; */
+    margin: -6rem 2.5rem 0 0;
 }
 .parag {
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: inherit;
+    font-weight: 100;
+    font-size: 1.5rem;
+    letter-spacing: -0.035em;
+    margin:inherit ;
+    padding: 4rem 0;
     line-height: 36px;
-    font-weight: 400;
-    margin-top: -10px;
-    margin-bottom: 40px;
-}
+} 
 button {
-    background-color: #333333;
-    color: white;
-    padding: 14px;
-    transition: 0.4s ease-in;
-    letter-spacing: -1px;
+    padding: 0.8rem;
+    margin-top: -1rem;
+    background-color: #333;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color:white;
 }
-button:hover {
-    border: 1px solid rgb(75, 32, 32);
-    padding: 12px;
-    font-size: 14px;
+@media  screen and (max-width:809px) {
+    .container {
+        display:flex;
+        flex-direction: column;
+    }
+    .username {
+        top:93%;
+        display: flex;
+        left: 33%;
+    }
+    .img {
+        max-width: 75%;
+        margin-top: 0;
+    }
 }
-
+@media screen and (max-width:300px) {
+    .img {
+        display:none;
+    }
+    .username {
+        display: none;
+    }
+}
