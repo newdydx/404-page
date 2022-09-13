@@ -34,6 +34,8 @@ img {
     font-size: 4rem;
     font-weight: 700;
     font-family: 'space Mono';
+     word-spacing:1.9rem;
+     letter-spacing: 0.1rem;
 }
 .head {
     /* text-align: justify; */
@@ -47,6 +49,8 @@ img {
     margin:inherit ;
     padding: 4rem 0;
     line-height: 36px;
+    word-spacing: 1rem;
+    text-align: justify;
 } 
 button {
     padding: 0.8rem;
